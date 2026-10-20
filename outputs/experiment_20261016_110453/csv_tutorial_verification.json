@@ -1,0 +1,9 @@
+{
+  "document_utf8_and_fences_valid": true,
+  "document_links_exist": 4,
+  "trace_rows": 4085,
+  "all_points_acc_gyro_fused_and_flags_recomputed": true,
+  "max_abs_difference_deg": 2.8421709430404007e-13,
+  "parameter_and_first_three_step_numbers_match": true,
+  "no_algorithm_or_experiment_parameter_changes": true
+}

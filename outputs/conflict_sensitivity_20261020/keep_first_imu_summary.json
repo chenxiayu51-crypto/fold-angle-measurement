@@ -1,0 +1,95 @@
+{
+  "source": "data/raw/sensor_log_2026-10-16_11-04-53.csv",
+  "clock_map": {
+    "scale": 1.0000133693743427,
+    "offset_s": -0.014183239063981336,
+    "method": "robust fit to neighboring host-clock CSV rows; uncalibrated software approximation",
+    "residual_p05_p50_p95_ms": [
+      -7.236828355863167,
+      -0.07835558084678951,
+      7.896716222930065
+    ],
+    "host_base_ns": 1792119894952000000,
+    "sensor_base_ns": 54192337235780
+  },
+  "mapping": {
+    "main_A": [
+      "加速度传感器",
+      "陀螺仪传感器"
+    ],
+    "secondary_B": [
+      "acc1",
+      "gyro1"
+    ],
+    "status": "Inferred from same clock grouping, near-static main gravity and much larger secondary gyro motion; physical label pairing should be confirmed at acquisition."
+  },
+  "units": {
+    "gyro": "rad/s, user-confirmed for hardware",
+    "acc": "m/s^2 inferred from stationary norm"
+  },
+  "axis_b": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "axis_a_provisional": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "pca_axis_b": [
+    0.0020523457612667897,
+    0.9999646406952779,
+    -0.008155074251043153
+  ],
+  "pca_energy_fraction": 0.9993201040212417,
+  "acc_only_plane_normal": [
+    0.0023766282240284538,
+    0.999995486249585,
+    -0.0018382379445259778
+  ],
+  "axis_input_source": "dominant coordinate of Acc-B-only gravity plane normal; gyro PCA used as independent agreement check, not candidate input",
+  "gyro_std_xyz": [
+    0.019467747475713285,
+    0.7472305604945859,
+    0.015276666474465852
+  ],
+  "base_gyro_std_xyz": [
+    0.020883012720238247,
+    0.021812994725228973,
+    0.0076519453443680925
+  ],
+  "bias_B_xyz_rad_s": [
+    0.00345,
+    0.0002,
+    -0.0008500000000000001
+  ],
+  "bias_A_xyz_rad_s": [
+    -0.00245,
+    0.00155,
+    -0.0003
+  ],
+  "reference_window_imu_s": [
+    0.0,
+    1.0
+  ],
+  "initial_angle_deg": 33.253755,
+  "initialization_source": "median raw visual projection for 0.4s near first IMU sample; shared initial angle only; no subsequent vision corrections",
+  "initialization_video_s": [
+    1.233333,
+    1.6
+  ],
+  "output_rows": 4085,
+  "native_retained_A_rows": 4101,
+  "fixed_acc_updates": 2346,
+  "dual_acc_updates": 2318,
+  "retained_B_acc_updates": 2318,
+  "first_second_gyro_B_std": [
+    0.012151651693859929,
+    0.057054812217920955,
+    0.013775621961155393
+  ],
+  "fixed_base_gate": "acc norm deviation<0.6m/s²; projected gravity>0.2g; jerk<30m/s³; gyro norm<.25rad/s; innovation<20deg; tau=1s; invalid gaps>.1s",
+  "retained_A_gate": "two acc norm/projection/jerk gates; phase rate<.25rad/s and retained A gyro norm<.25rad/s; high dynamics invalid, no pretend-zero B gyro",
+  "state": "offline only; native gyro integration and acceleration interpolation; axes/clock not independently calibrated"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "source": "data/raw/243eca009e4449f611a92a5437cc4d66.mp4",
+  "method": "manually initialized template tracking + constrained LSD side-edge detection",
+  "assumptions": "fixed camera and fixed lower body; local translation compensates small accidental movement",
+  "config": {
+    "reference_size": [
+      480,
+      256
+    ],
+    "base_template_box": [
+      90,
+      149,
+      238,
+      159
+    ],
+    "lower_edge": [
+      [
+        239,
+        152
+      ],
+      [
+        90,
+        150
+      ]
+    ],
+    "hinge": [
+      240,
+      148
+    ],
+    "body_length": 150,
+    "template_search_radius": [
+      12,
+      10
+    ],
+    "min_template_score": 0.65,
+    "max_angle_step_deg": 24,
+    "min_edge_score": 0.66,
+    "max_reacquire_gap": 8,
+    "note": "Manual first-frame ROI initialization for this video; coordinates must be changed for other scenes. Angles are uncalibrated image projection angles."
+  },
+  "fps": 30.0,
+  "processed_frames": 545,
+  "declared_frames": 545,
+  "duration_s": 18.166666666666668,
+  "last_frame_timestamp_s": 18.133333,
+  "timestamp_method": "frame_index / nominal FPS; assumes constant frame rate",
+  "valid_frames": 535,
+  "invalid_frames": 10,
+  "valid_fraction": 0.981651376146789,
+  "invalid_reasons": {
+    "lower_edge_not_found": 9,
+    "angle_discontinuity": 1
+  },
+  "min_projected_angle_deg": 0.001490417853197466,
+  "max_projected_angle_deg": 179.67433193044388,
+  "angle_type": "uncalibrated 2D projection; no mechanical-angle ground truth",
+  "smoothing": "causal median of up to 5 consecutive valid frames; resets after every invalid frame",
+  "support_score_type": "heuristic image support; not probability or validated accuracy",
+  "interpolation": "none",
+  "audio": "not retained in annotated video"
+}

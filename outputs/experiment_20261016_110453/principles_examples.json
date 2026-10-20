@@ -1,0 +1,181 @@
+{
+  "duplicate_conflict": {
+    "sensor": "gyro1",
+    "timestamp_ns": 1792119897253000000,
+    "raw_xyz_in_file_order": [
+      [
+        -0.0162,
+        -2.569,
+        0.0101
+      ],
+      [
+        -0.0124,
+        -2.3666,
+        0.009
+      ]
+    ],
+    "kept_xyz": [
+      -0.0124,
+      -2.3666,
+      0.009
+    ]
+  },
+  "accepted_step": {
+    "index": 1,
+    "times_s": [
+      0.0,
+      0.013
+    ],
+    "dt_s": 0.013,
+    "raw_gyro_xyz_rad_s": [
+      [
+        0.0083,
+        0.0418,
+        -0.0036
+      ],
+      [
+        0.0084,
+        0.0349,
+        -0.0032
+      ]
+    ],
+    "corrected_axial_rate_rad_s": [
+      0.0416,
+      0.0347
+    ],
+    "previous_fused_deg": 33.253755,
+    "increment_deg": -0.02841584184951318,
+    "prediction_deg": 33.22533915815048,
+    "interpolated_acc_xyz_m_s2": [
+      -5.3598,
+      0.0095,
+      -8.2942
+    ],
+    "gravity_reference_xyz": [
+      -5.3909,
+      0.01602058370192303,
+      -8.2248
+    ],
+    "gravity_reference_norm": 9.834093476731963,
+    "acc_norm": 9.87528733404755,
+    "projected_gravity_fraction": 1.004188417358925,
+    "jerk_m_s3": 6.4338095499823,
+    "gyro_norm_rad_s": 0.0351299729575757,
+    "gravity_phase_rad": 0.006486418533231794,
+    "acc_observation_deg": 32.882110593890374,
+    "innovation_deg": -0.3432285642601087,
+    "gain": 0.012915864979712421,
+    "acc_used": true,
+    "calculated_deg": 33.220906064357315,
+    "saved_deg": 33.22090606435732
+  },
+  "rejected_step": {
+    "index": 190,
+    "times_s": [
+      1.9820001,
+      2.003
+    ],
+    "dt_s": 0.02099990000000007,
+    "raw_gyro_xyz_rad_s": [
+      [
+        0.0064,
+        -0.2519,
+        0.002
+      ],
+      [
+        0.0106,
+        -0.4241,
+        -0.0045
+      ]
+    ],
+    "corrected_axial_rate_rad_s": [
+      -0.2521,
+      -0.42429999999999995
+    ],
+    "previous_fused_deg": 35.87009105518767,
+    "increment_deg": 0.4069241475145514,
+    "prediction_deg": 36.27701520270222,
+    "interpolated_acc_xyz_m_s2": [
+      -5.7738,
+      -0.0312,
+      -8.2344
+    ],
+    "gravity_reference_xyz": [
+      -5.3909,
+      0.01602058370192303,
+      -8.2248
+    ],
+    "gravity_reference_norm": 9.834093476731963,
+    "acc_norm": 10.056991758970472,
+    "projected_gravity_fraction": 1.0226609485122031,
+    "jerk_m_s3": 11.581860996067594,
+    "gyro_norm_rad_s": 0.42437593593416667,
+    "gravity_phase_rad": -0.031324622447765724,
+    "acc_observation_deg": 35.04852366109773,
+    "innovation_deg": -1.228491541604491,
+    "gain": 0.020780937508639075,
+    "acc_used": false,
+    "calculated_deg": 36.27701520270222,
+    "saved_deg": 36.27701520270222
+  },
+  "visual_example": {
+    "frame": 0,
+    "lower_vector": [
+      289.99800000000005,
+      1.01400000000001
+    ],
+    "observed_upper_vector": [
+      220.06499999999994,
+      -144.30599999999998
+    ],
+    "angle_from_rounded_coordinates_deg": 33.45490178973669,
+    "selected_edge_angle_deg": 33.45483,
+    "fused_raw_angle_deg": 33.52841,
+    "fusion_count": 3,
+    "next_raw_angle_deg": 33.51302,
+    "next_smoothed_deg": 33.52618257115093
+  },
+  "aligned_example": {
+    "row": {
+      "frame_index": "300",
+      "video_time_s": "10.0",
+      "imu_time_s": "8.782839100809367",
+      "visual_raw_projected_deg": "67.61271",
+      "visual_one_euro_deg": "67.5712",
+      "visual_valid": "1",
+      "core_comparison_valid": "1",
+      "all_comparison_valid": "0",
+      "Gyro": "67.8516688002336",
+      "Fixed complementary": "67.2779535194414",
+      "Dual AB": "66.7101670781672",
+      "Retain B": "66.75606663073773",
+      "Retain A gravity": ""
+    },
+    "imu_bracket_s": [
+      8.776,
+      8.7939999
+    ],
+    "imu_bracket_fixed_angles_deg": [
+      67.28055188393508,
+      67.27371322160892
+    ],
+    "interpolation_weight": 0.37995215581017244,
+    "recomputed_estimate_deg": 67.2779535194414,
+    "residual_deg": -0.3347564805586103
+  },
+  "fixed_metrics_recomputed": {
+    "samples": 1051,
+    "mae_deg": 0.6694560867616173,
+    "rmse_deg": 1.0404941276331632,
+    "p95_abs_deg": 1.855360096449071,
+    "max_abs_deg": 7.684712914555026,
+    "mean_bias_deg": -0.040670713775774435
+  },
+  "checks": {
+    "duplicate_keep_last_matches": true,
+    "accepted_and_rejected_updates_reproduced": true,
+    "one_euro_first_two_rows_reproduced": true,
+    "observed_edge_angle_reproduced_with_csv_rounding_tolerance": true,
+    "aligned_interpolation_and_metrics_reproduced": true
+  }
+}

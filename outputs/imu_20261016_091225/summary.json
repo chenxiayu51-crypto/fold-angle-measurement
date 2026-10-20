@@ -1,0 +1,177 @@
+{
+  "source": "data/raw/sensor_log_2026-10-16_09-12-25.csv",
+  "source_sha256": "c4dcf53900c0295d79c81d95c167020505b77558852de105284bc7b18919a5fc",
+  "duration_s": 52.7100001,
+  "output_rows": 4354,
+  "output_sampling": "unique gyro1 events, common four-stream support; accelerations interpolated offline",
+  "assumptions": {
+    "gyro_unit": "rad/s, confirmed by user",
+    "acc_unit": "m/s^2, inferred from stationary norm",
+    "moving_imu": "secondary IMU, user-confirmed role; acc1/gyro1 mapping inferred from motion",
+    "fixed_imu": "main IMU, user-confirmed role; Chinese-named mapping inferred; small base motion exists",
+    "hinge_axes": "both +Y provisionally; installation signs not independently calibrated",
+    "initial_angle_deg": 180,
+    "initial_angle_source": "user-described initially fully unfolded",
+    "calibration_s": 5,
+    "correction_tau_s": 1,
+    "acc_gate": "norm within 0.6 m/s^2 of initial gravity; projected gravity >0.2g; jerk<30 m/s^3; gyro norm<0.25 rad/s; innovation<20 degrees",
+    "endpoint_clipping": false,
+    "endpoint_scale_fit": false,
+    "zero_phase_filter": false
+  },
+  "clock_map": {
+    "scale": 1.00004450674793,
+    "offset_s": 0.003502167709346383,
+    "method": "robust fit to neighboring host-clock CSV rows; uncalibrated software approximation",
+    "residual_p05_p50_p95_ms": [
+      -9.030282434320647,
+      -0.052705216592841,
+      11.742308180207894
+    ],
+    "host_base_ns": 1792113199017999900,
+    "sensor_base_ns": 47496421019217
+  },
+  "gyro_principal_axis": [
+    0.004605928174030002,
+    0.9999638073012374,
+    -0.007153286885732253
+  ],
+  "gyro_principal_component_energy_fraction": 0.998411003325368,
+  "initial_bias_xyz_rad_s": [
+    0.0001,
+    0.0001,
+    0.0
+  ],
+  "fixed_base_fused_min_max_deg": [
+    -2.2620028989446777,
+    182.0056808389808
+  ],
+  "gyro_only_min_max_deg": [
+    -0.5464728789315252,
+    181.51328413162312
+  ],
+  "valid_rows": 4354,
+  "acc_corrections": 3345,
+  "provisional_dual_minus_fixed_max_abs_deg": 5.33190389867363,
+  "windows": [
+    {
+      "label": "initial_flat",
+      "start_s": 0,
+      "end_s": 10,
+      "samples": 854,
+      "acc": {
+        "median_deg": 179.97224496910945,
+        "std_deg": 0.17602566271883816
+      },
+      "gyro": {
+        "median_deg": 179.9977883695896,
+        "std_deg": 0.058546517375701004
+      },
+      "fixed_base_fused": {
+        "median_deg": 179.9957969545435,
+        "std_deg": 0.0630504918061062
+      },
+      "provisional_dual": {
+        "median_deg": 179.9943590536336,
+        "std_deg": 0.07118327359819904
+      }
+    },
+    {
+      "label": "first_closed",
+      "start_s": 18.5,
+      "end_s": 24.5,
+      "samples": 483,
+      "acc": {
+        "median_deg": 0.8300433186842423,
+        "std_deg": 0.22998159798750986
+      },
+      "gyro": {
+        "median_deg": -0.24479371415596282,
+        "std_deg": 0.06090864858743681
+      },
+      "fixed_base_fused": {
+        "median_deg": 0.7949121587432966,
+        "std_deg": 0.06940745043759922
+      },
+      "provisional_dual": {
+        "median_deg": 1.9023035258596863,
+        "std_deg": 0.1495473346873185
+      }
+    },
+    {
+      "label": "middle_flat",
+      "start_s": 33,
+      "end_s": 34.5,
+      "samples": 116,
+      "acc": {
+        "median_deg": 179.57308476502538,
+        "std_deg": 0.08855842120440911
+      },
+      "gyro": {
+        "median_deg": 181.47321870218047,
+        "std_deg": 0.03656272185061116
+      },
+      "fixed_base_fused": {
+        "median_deg": 180.20489865052116,
+        "std_deg": 0.23066474214206148
+      },
+      "provisional_dual": {
+        "median_deg": 180.49897040280064,
+        "std_deg": 0.3645277011906091
+      }
+    },
+    {
+      "label": "second_closed",
+      "start_s": 39.5,
+      "end_s": 43.5,
+      "samples": 311,
+      "acc": {
+        "median_deg": 0.8269910474624858,
+        "std_deg": 0.5710723967916375
+      },
+      "gyro": {
+        "median_deg": 2.58797761644035,
+        "std_deg": 0.01331014751602354
+      },
+      "fixed_base_fused": {
+        "median_deg": 0.8106633324133828,
+        "std_deg": 0.015163738508720971
+      },
+      "provisional_dual": {
+        "median_deg": 1.9110953862029143,
+        "std_deg": 0.16554271416997138
+      }
+    },
+    {
+      "label": "final_flat",
+      "start_s": 51,
+      "end_s": 52.5,
+      "samples": 126,
+      "acc": {
+        "median_deg": 179.34469703006044,
+        "std_deg": 0.781697238326946
+      },
+      "gyro": {
+        "median_deg": 179.65626219734023,
+        "std_deg": 0.1113940065294948
+      },
+      "fixed_base_fused": {
+        "median_deg": 178.93573677361172,
+        "std_deg": 0.2732439211874003
+      },
+      "provisional_dual": {
+        "median_deg": 180.34301096714944,
+        "std_deg": 0.2798286825234786
+      }
+    }
+  ],
+  "limitations": [
+    "No independent intermediate-angle ground truth; no physical accuracy validated.",
+    "Initialization uses user-provided 180 degrees; it is not an independent measurement.",
+    "Current +Y axis convention is data-supported but not a full IMU installation calibration.",
+    "Clock mapping is approximate; timestamp semantics require acquisition metadata.",
+    "67 acc1 and 23 gyro1 timestamps have differing values; keep-last is a documented lossy resolution.",
+    "This is offline interpolation; a live implementation needs causal asynchronous sampling.",
+    "This sensor capture is not synchronized to the earlier video."
+  ]
+}

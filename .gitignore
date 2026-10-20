@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.superpowers/
+.tools/
+.venv/
+venv/
+*.egg-info/
+.idea/
+Thumbs.db
+.DS_Store

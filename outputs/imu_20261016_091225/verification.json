@@ -1,0 +1,31 @@
+{
+  "rows": 4354,
+  "strictly_increasing_original_integer_timestamps": true,
+  "all_angle_values_finite": true,
+  "source_unchanged_sha256": "c4dcf53900c0295d79c81d95c167020505b77558852de105284bc7b18919a5fc",
+  "independent_trapezoid_max_error_deg": 3.951283744640932e-13,
+  "major_motion_abs_rate_over20deg_s_intervals": [
+    [
+      13.768,
+      13.8110001
+    ],
+    [
+      15.104,
+      17.5030001
+    ],
+    [
+      30.2620001,
+      32.0790001
+    ],
+    [
+      35.872,
+      38.5670001
+    ],
+    [
+      47.6230001,
+      50.2530001
+    ]
+  ],
+  "test_run": "22 passed, 13 subtests passed",
+  "not_validated": "physical angle accuracy, installed axis calibration, hardware clock synchronization"
+}

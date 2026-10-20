@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-15",
+  "tests_passed": 17,
+  "csv_rows": 545,
+  "decoded_video_frames": 545,
+  "fps": 30.0,
+  "valid_frames": 544,
+  "invalid_frame_indices": [
+    426
+  ],
+  "constant_pivot_pixels": [
+    240.0,
+    148.0
+  ],
+  "pivot_coordinate_range_pixels": [
+    0.0,
+    0.0
+  ],
+  "lower_ray_constant_in_all_rows": true,
+  "two_rays_share_same_origin_on_all_valid_frames": true,
+  "modeled_ray_angle_matches_filtered_csv": true,
+  "selected_observation_angle_recomputes_against_fixed_lower": true,
+  "invalid_angles_blank": true,
+  "observations_coordinate_system": "original source pixels",
+  "rays_coordinate_system": "stabilized reference pixels",
+  "stability_metrics_file": "stability_comparison.json",
+  "accuracy_note": "Uncalibrated projected angles; stability statistics are not physical accuracy."
+}

@@ -1,0 +1,25 @@
+{
+  "source": "data/raw/1016110453.mp4",
+  "width": 1280,
+  "height": 720,
+  "fps": 30.0,
+  "declared_frames": 1421,
+  "decoded_frames": 1421,
+  "duration_nominal_s": 47.36666666666667,
+  "first_decodable_frame": 0,
+  "last_decodable_frame": 1420,
+  "last_frame_nominal_s": 47.333333333333336,
+  "opencv_decoder_timestamp_usable": true,
+  "decoder_interval_percentiles_s": [
+    0.03333333333333144,
+    0.03333333333333144,
+    0.033333333333333215,
+    0.033333333333338544,
+    0.033333333333338544
+  ],
+  "decoder_timestamp_vs_nominal_max_abs_s": 7.105427357601002e-15,
+  "suspicious_decoder_gaps": 0,
+  "declared_vs_decoded_discrepancy": 0,
+  "angle_time_axis": "frame_index / nominal fps",
+  "limitations": "Decoder timestamps are container playback times, not exposure hardware timestamps. No frame counter or sequence metadata proves absence of acquisition-side dropped frames. Camera/base are visually stable until the late camera repositioning; invalid template matches are excluded."
+}

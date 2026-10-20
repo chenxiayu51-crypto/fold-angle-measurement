@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-15",
+  "metric_note": "Frame-change RMS measures short-term fluctuation. Window standard deviation also includes slow drift. No mechanical ground truth; these are stability diagnostics only.",
+  "windows": {
+    "closed": {
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "previous_raw": {
+        "n": 91,
+        "mean_deg": 0.12882010989010986,
+        "window_std_deg": 0.09439963429448749,
+        "frame_change_rms_deg": 0.09141743786365682
+      },
+      "previous_filtered": {
+        "n": 91,
+        "mean_deg": 0.12864054945054942,
+        "window_std_deg": 0.0731407569872307,
+        "frame_change_rms_deg": 0.022635886134876874
+      },
+      "fixed_pivot_raw": {
+        "n": 91,
+        "mean_deg": 0.3938104395604396,
+        "window_std_deg": 0.13200198381719466,
+        "frame_change_rms_deg": 0.14419827574866798
+      },
+      "fixed_pivot_filtered": {
+        "n": 91,
+        "mean_deg": 0.38037505494505497,
+        "window_std_deg": 0.08629025246892505,
+        "frame_change_rms_deg": 0.018028092769033808
+      },
+      "filtered_frame_change_reduction_fraction": 0.20356143065870436
+    },
+    "flat": {
+      "start_s": 15.6,
+      "end_s": 18.1,
+      "previous_raw": {
+        "n": 76,
+        "mean_deg": 179.42818171052633,
+        "window_std_deg": 0.13342914754347804,
+        "frame_change_rms_deg": 0.1333482555116476
+      },
+      "previous_filtered": {
+        "n": 76,
+        "mean_deg": 179.43514934210526,
+        "window_std_deg": 0.10992153098718455,
+        "frame_change_rms_deg": 0.060304826141860515
+      },
+      "fixed_pivot_raw": {
+        "n": 76,
+        "mean_deg": 179.5892210526316,
+        "window_std_deg": 0.10494311973860494,
+        "frame_change_rms_deg": 0.027881897687686327
+      },
+      "fixed_pivot_filtered": {
+        "n": 76,
+        "mean_deg": 179.56175592105265,
+        "window_std_deg": 0.10731093782454522,
+        "frame_change_rms_deg": 0.0077916976327367295
+      },
+      "filtered_frame_change_reduction_fraction": 0.8707947915411014
+    }
+  },
+  "response_at_90deg_crossings": [
+    {
+      "direction": "opening",
+      "raw_crossing_s": 5.293357727110784,
+      "filtered_crossing_s": 5.315967631087887,
+      "filter_delay_ms": 22.609903977103052
+    },
+    {
+      "direction": "closing",
+      "raw_crossing_s": 7.703147149997581,
+      "filtered_crossing_s": 7.716935116532178,
+      "filter_delay_ms": 13.787966534597018
+    },
+    {
+      "direction": "opening",
+      "raw_crossing_s": 9.876352509434014,
+      "filtered_crossing_s": 9.890047527295165,
+      "filter_delay_ms": 13.695017861151015
+    },
+    {
+      "direction": "closing",
+      "raw_crossing_s": 12.344299390950969,
+      "filtered_crossing_s": 12.355732220494197,
+      "filter_delay_ms": 11.432829543227996
+    },
+    {
+      "direction": "opening",
+      "raw_crossing_s": 14.333773801485323,
+      "filtered_crossing_s": 14.35329154632271,
+      "filter_delay_ms": 19.517744837386886
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "common_support": {
+    "Gyro": {
+      "samples": 482,
+      "mae_deg": 0.973381624796745,
+      "rmse_deg": 1.1982182770377412,
+      "p95_abs_deg": 1.6363517882365997,
+      "max_abs_deg": 7.01547135452585,
+      "mean_bias_deg": 0.6908770078882844,
+      "median_bias_deg": 0.8024769901799118
+    },
+    "Fixed complementary": {
+      "samples": 482,
+      "mae_deg": 0.6312571080904512,
+      "rmse_deg": 0.9197795179283222,
+      "p95_abs_deg": 1.3255468039556617,
+      "max_abs_deg": 7.684712914555026,
+      "mean_bias_deg": 0.0481404304933124,
+      "median_bias_deg": 0.3513483353985478
+    },
+    "Dual AB": {
+      "samples": 482,
+      "mae_deg": 0.9804218421301868,
+      "rmse_deg": 1.2988370064322612,
+      "p95_abs_deg": 2.282701815558014,
+      "max_abs_deg": 8.396369065896994,
+      "mean_bias_deg": -0.9030632409627166,
+      "median_bias_deg": -0.9158223158565448
+    },
+    "Retain B": {
+      "samples": 482,
+      "mae_deg": 0.8253788288417954,
+      "rmse_deg": 1.135560972633139,
+      "p95_abs_deg": 1.946410663478871,
+      "max_abs_deg": 8.105836001434222,
+      "mean_bias_deg": -0.7110498601186577,
+      "median_bias_deg": -0.6603699570169388
+    },
+    "Retain A gravity": {
+      "samples": 482,
+      "mae_deg": 0.9170185744700492,
+      "rmse_deg": 1.237933798046066,
+      "p95_abs_deg": 2.230761698552456,
+      "max_abs_deg": 8.040844241040825,
+      "mean_bias_deg": -0.8018717006062587,
+      "median_bias_deg": -0.8227331591775595
+    }
+  },
+  "own_support": {
+    "Gyro": {
+      "samples": 1051,
+      "mae_deg": 0.9269382009710264,
+      "rmse_deg": 1.2218239801969608,
+      "p95_abs_deg": 1.708882765448216,
+      "max_abs_deg": 7.01547135452585,
+      "mean_bias_deg": 0.5543793425548278,
+      "median_bias_deg": 0.6644989720971779,
+      "availability_fraction": 1.0
+    },
+    "Fixed complementary": {
+      "samples": 1051,
+      "mae_deg": 0.6694560867616173,
+      "rmse_deg": 1.0404941276331632,
+      "p95_abs_deg": 1.855360096449071,
+      "max_abs_deg": 7.684712914555026,
+      "mean_bias_deg": -0.040670713775774435,
+      "median_bias_deg": 0.1574104879060556,
+      "availability_fraction": 1.0
+    },
+    "Dual AB": {
+      "samples": 1051,
+      "mae_deg": 1.0487964307292426,
+      "rmse_deg": 1.4230731983554867,
+      "p95_abs_deg": 2.5028903233010453,
+      "max_abs_deg": 8.396369065896994,
+      "mean_bias_deg": -0.9102370881958636,
+      "median_bias_deg": -0.9023382211500186,
+      "availability_fraction": 1.0
+    },
+    "Retain B": {
+      "samples": 1051,
+      "mae_deg": 0.9095667051629714,
+      "rmse_deg": 1.2781141269407563,
+      "p95_abs_deg": 2.312761107467293,
+      "max_abs_deg": 8.105836001434222,
+      "mean_bias_deg": -0.736183231006673,
+      "median_bias_deg": -0.648092198506049,
+      "availability_fraction": 1.0
+    },
+    "Retain A gravity": {
+      "samples": 482,
+      "mae_deg": 0.9170185744700492,
+      "rmse_deg": 1.237933798046066,
+      "p95_abs_deg": 2.230761698552456,
+      "max_abs_deg": 8.040844241040825,
+      "mean_bias_deg": -0.8018717006062587,
+      "median_bias_deg": -0.8227331591775595,
+      "availability_fraction": 0.4586108468125595
+    }
+  },
+  "all_common_samples": 482,
+  "coverage_denominator": 1051,
+  "retained_A_uses": "Acc A, Acc B, Gyro A; native Acc B timestamps; no B gyro values, bias, rate, gates or event times",
+  "retained_B_uses": "Acc A, Acc B, Gyro B; no A gyro values, bias or gates",
+  "shared_calibration": "Fixed external time alignment and visual initial angle are evaluation metadata. No future vision is fed to an estimator.",
+  "limitations": "Fixed-base experiment; A-only gravity rejects dynamic samples. No neural model trained and no arbitrary-handheld sensor-removal claim."
+}

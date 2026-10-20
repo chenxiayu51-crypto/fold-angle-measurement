@@ -1,0 +1,223 @@
+{
+  "static_windows": [
+    {
+      "video_start_s": 5.466667,
+      "video_end_s": 7.4,
+      "visual": {
+        "samples": 59,
+        "median_deg": 179.37019,
+        "std_deg": 0.15327756063343653
+      },
+      "estimates": {
+        "Gyro": {
+          "samples": 59,
+          "median_deg": 180.95538886005738,
+          "std_deg": 0.1729246042350523
+        },
+        "Fixed complementary": {
+          "samples": 59,
+          "median_deg": 180.28869032489933,
+          "std_deg": 0.301688812651616
+        },
+        "Dual AB": {
+          "samples": 59,
+          "median_deg": 179.17147840726244,
+          "std_deg": 0.3990151432539155
+        },
+        "Retain B": {
+          "samples": 59,
+          "median_deg": 179.4211359500346,
+          "std_deg": 0.5603607340174086
+        },
+        "Retain A gravity": {
+          "samples": 53,
+          "median_deg": 178.47511573586857,
+          "std_deg": 0.11459652106529718
+        }
+      }
+    },
+    {
+      "video_start_s": 9.266667,
+      "video_end_s": 10.133333,
+      "visual": {
+        "samples": 27,
+        "median_deg": 67.46926,
+        "std_deg": 0.2568257712177493
+      },
+      "estimates": {
+        "Gyro": {
+          "samples": 27,
+          "median_deg": 67.47429014841406,
+          "std_deg": 0.23828863463165573
+        },
+        "Fixed complementary": {
+          "samples": 27,
+          "median_deg": 66.77402759801562,
+          "std_deg": 0.35916980002570326
+        },
+        "Dual AB": {
+          "samples": 27,
+          "median_deg": 66.13421010517615,
+          "std_deg": 0.44324292497582957
+        },
+        "Retain B": {
+          "samples": 27,
+          "median_deg": 66.15092025802599,
+          "std_deg": 0.4654599067799015
+        },
+        "Retain A gravity": {
+          "samples": 16,
+          "median_deg": 66.98035036419571,
+          "std_deg": 0.35393346096114486
+        }
+      }
+    },
+    {
+      "video_start_s": 12.833333,
+      "video_end_s": 14.233333,
+      "visual": {
+        "samples": 43,
+        "median_deg": 179.57251,
+        "std_deg": 0.045321676272880654
+      },
+      "estimates": {
+        "Gyro": {
+          "samples": 43,
+          "median_deg": 180.35048621373085,
+          "std_deg": 0.03935273052759115
+        },
+        "Fixed complementary": {
+          "samples": 43,
+          "median_deg": 180.0383812273982,
+          "std_deg": 0.051173958847094525
+        },
+        "Dual AB": {
+          "samples": 43,
+          "median_deg": 178.7125033540431,
+          "std_deg": 0.03457368347374204
+        },
+        "Retain B": {
+          "samples": 43,
+          "median_deg": 179.09674723110143,
+          "std_deg": 0.14783293993034446
+        },
+        "Retain A gravity": {
+          "samples": 42,
+          "median_deg": 178.7823223131129,
+          "std_deg": 0.07096675662981448
+        }
+      }
+    },
+    {
+      "video_start_s": 31.7,
+      "video_end_s": 35.0,
+      "visual": {
+        "samples": 100,
+        "median_deg": 179.66095,
+        "std_deg": 0.08131481816102165
+      },
+      "estimates": {
+        "Gyro": {
+          "samples": 100,
+          "median_deg": 181.17225159880644,
+          "std_deg": 0.08721851091873498
+        },
+        "Fixed complementary": {
+          "samples": 100,
+          "median_deg": 180.193797415915,
+          "std_deg": 0.01309609100243225
+        },
+        "Dual AB": {
+          "samples": 100,
+          "median_deg": 178.6613266489395,
+          "std_deg": 0.09473937632560815
+        },
+        "Retain B": {
+          "samples": 100,
+          "median_deg": 178.92287745242345,
+          "std_deg": 0.13057508722723193
+        },
+        "Retain A gravity": {
+          "samples": 90,
+          "median_deg": 178.76457597627285,
+          "std_deg": 0.12038881864729796
+        }
+      }
+    }
+  ],
+  "endpoints": {
+    "Visual": {
+      "first_common": {
+        "samples": 10,
+        "median_deg": 34.203555,
+        "std_deg": 0.30501513667357644
+      },
+      "last_common": {
+        "samples": 10,
+        "median_deg": 2.02937,
+        "std_deg": 0.06351189809791548
+      }
+    },
+    "Gyro": {
+      "first_common": {
+        "samples": 10,
+        "median_deg": 34.65235611945232,
+        "std_deg": 0.26616237640571977
+      },
+      "last_common": {
+        "samples": 10,
+        "median_deg": 1.4540692641486754,
+        "std_deg": 0.1833910844929605
+      }
+    },
+    "Fixed complementary": {
+      "first_common": {
+        "samples": 10,
+        "median_deg": 34.738418261495596,
+        "std_deg": 0.2734207300740975
+      },
+      "last_common": {
+        "samples": 10,
+        "median_deg": 0.7621011234987614,
+        "std_deg": 0.07122034044779497
+      }
+    },
+    "Dual AB": {
+      "first_common": {
+        "samples": 10,
+        "median_deg": 34.63669850355942,
+        "std_deg": 0.2785285891371495
+      },
+      "last_common": {
+        "samples": 10,
+        "median_deg": 0.14462603427754944,
+        "std_deg": 0.2238868075967807
+      }
+    },
+    "Retain B": {
+      "first_common": {
+        "samples": 10,
+        "median_deg": 34.70650368642522,
+        "std_deg": 0.26833537270930763
+      },
+      "last_common": {
+        "samples": 10,
+        "median_deg": 0.3830934540825316,
+        "std_deg": 0.1569106455642946
+      }
+    },
+    "Retain A gravity": {
+      "first_common": {
+        "samples": 5,
+        "median_deg": 34.37928241117561,
+        "std_deg": 0.5100048559124352
+      },
+      "last_common": {
+        "samples": 10,
+        "median_deg": 0.7607281662963872,
+        "std_deg": 0.06288738472737478
+      }
+    }
+  },
+  "note": "Beginning and ending configurations differ; endpoint difference is not automatically drift. Use residual change and matching physical states."
+}

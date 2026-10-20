@@ -1,0 +1,15 @@
+{
+  "clock_coefficients_match_existing_code": true,
+  "basis_orthonormal": true,
+  "e1_cross_e2_equals_negative_h": true,
+  "vector_reconstruction": true,
+  "actual_acc_phase_verified": true,
+  "png_count": 7,
+  "document_links_checked": 13,
+  "missing_document_links": [],
+  "balanced_fences": true,
+  "utf8_no_replacement_character": true,
+  "trapezoid_actual_sample_verified": true,
+  "complementary_actual_sample_verified": true,
+  "document_characters": 17006
+}

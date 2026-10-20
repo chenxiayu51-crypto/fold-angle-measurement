@@ -1,0 +1,17 @@
+{
+  "document": "../../docs\\2026-10-16-synchronized-experiment-principles.md",
+  "utf8_valid": true,
+  "characters": 21428,
+  "linked_files_checked": 21,
+  "missing_links": [],
+  "code_fences_and_display_math_balanced": true,
+  "worked_example_checks": {
+    "duplicate_keep_last_matches": true,
+    "accepted_and_rejected_updates_reproduced": true,
+    "one_euro_first_two_rows_reproduced": true,
+    "observed_edge_angle_reproduced_with_csv_rounding_tolerance": true,
+    "aligned_interpolation_and_metrics_reproduced": true
+  },
+  "main_metrics_and_sync_match_saved_results": true,
+  "scope": "Documentation and worked examples; no algorithm parameter changes or experiment rerun."
+}

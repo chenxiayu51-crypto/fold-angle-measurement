@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "source": "data/raw/243eca009e4449f611a92a5437cc4d66.mp4",
+  "method": "fixed lower direction/common pivot + compatible LSD angle fusion + One Euro filter",
+  "assumptions": "fixed camera and fixed lower body; local translation compensates small accidental movement",
+  "config": {
+    "reference_size": [
+      480,
+      256
+    ],
+    "base_template_box": [
+      90,
+      149,
+      238,
+      159
+    ],
+    "lower_edge": [
+      [
+        239,
+        152
+      ],
+      [
+        90,
+        150
+      ]
+    ],
+    "hinge": [
+      240,
+      148
+    ],
+    "body_length": 150,
+    "template_search_radius": [
+      12,
+      10
+    ],
+    "min_template_score": 0.65,
+    "max_angle_step_deg": 24,
+    "min_edge_score": 0.66,
+    "max_reacquire_gap": 8,
+    "fixed_geometry": true,
+    "angle_filter": {
+      "min_cutoff_hz": 0.8,
+      "beta": 0.1,
+      "derivative_cutoff_hz": 1.0
+    },
+    "note": "Manual first-frame ROI initialization for this video; coordinates must be changed for other scenes. Angles are uncalibrated image projection angles."
+  },
+  "fps": 30.0,
+  "processed_frames": 545,
+  "declared_frames": 545,
+  "duration_s": 18.166666666666668,
+  "last_frame_timestamp_s": 18.133333,
+  "timestamp_method": "frame_index / nominal FPS; assumes constant frame rate",
+  "valid_frames": 544,
+  "invalid_frames": 1,
+  "valid_fraction": 0.998165137614679,
+  "invalid_reasons": {
+    "angle_discontinuity": 1
+  },
+  "min_projected_angle_deg": 0.18503218991322898,
+  "max_projected_angle_deg": 179.7668263367829,
+  "angle_type": "uncalibrated 2D projection; no mechanical-angle ground truth",
+  "smoothing": "One Euro adaptive cutoff; angle filter resets after every invalid frame",
+  "support_score_type": "heuristic image support; not probability or validated accuracy",
+  "interpolation": "none",
+  "audio": "not retained in annotated video",
+  "fixed_pivot": [
+    240.0,
+    148.0
+  ],
+  "fixed_lower_ray": [
+    [
+      240.0,
+      148.0
+    ],
+    [
+      90.00844217859267,
+      146.40859109358502
+    ]
+  ],
+  "geometry_coordinate_system": "stabilized_fixed_rays",
+  "observation_coordinate_system": "original video pixels",
+  "raw_angle_definition": "weighted fusion of compatible observed upper directions against one fixed lower direction",
+  "display_angle_definition": "One Euro filtered raw angle; two modeled rays share the fixed pivot",
+  "frame_stabilization": "translation of original image by negative base template offset; uncovered borders dark",
+  "physical_rail_note": "finite-thickness observed rails need not intersect; modeled rays represent directions at a common virtual pivot"
+}

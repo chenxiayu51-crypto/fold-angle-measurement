@@ -1,0 +1,211 @@
+{
+  "purpose": "This-recording parameter snapshot and explanation evidence; not universal or a learned model.",
+  "source": "data/raw/sensor_log_2026-10-16_11-04-53.csv",
+  "raw_columns": [
+    "timestamp_ns",
+    "delta_ms",
+    "sensor",
+    "x",
+    "y",
+    "z",
+    "w"
+  ],
+  "raw_rows": 18306,
+  "bias_B_rad_s": [
+    0.00345,
+    0.0002,
+    -0.0008500000000000001
+  ],
+  "bias_native_sample_count": 96,
+  "axis_B": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "opening_sign": -1,
+  "initial_angle_deg": 33.253755,
+  "initial_angle_source": "median raw visual projection for 0.4s near first IMU sample; shared initial angle only; no subsequent vision corrections",
+  "gravity_reference": [
+    -5.3909,
+    0.01602058370192303,
+    -8.2248
+  ],
+  "gravity_reference_count_on_gyro_grid": 96,
+  "gref": 9.834093476731963,
+  "e1": [
+    -0.5481854698942057,
+    0.0,
+    -0.8363567962280626
+  ],
+  "e2": [
+    0.8363567962280626,
+    -0.0,
+    -0.5481854698942057
+  ],
+  "tau_s": 1.0,
+  "clock_this_recording_only": {
+    "scale": 1.0000133693743427,
+    "offset_s": -0.014183239063981336,
+    "method": "robust fit to neighboring host-clock CSV rows; uncalibrated software approximation",
+    "residual_p05_p50_p95_ms": [
+      -7.236828355863167,
+      -0.07835558084678951,
+      7.896716222930065
+    ],
+    "host_base_ns": 1792119894952000000,
+    "sensor_base_ns": 54192337235780
+  },
+  "state_after_index_1": {
+    "time_s": 0.013,
+    "axial_rate_rad_s": 0.0347,
+    "final_fused_deg": 33.22090606435732,
+    "pure_gyro_deg": 33.22533915815048,
+    "acc_x_m_s2": -5.3598,
+    "acc_y_m_s2": 0.0095,
+    "acc_z_m_s2": -8.2942
+  },
+  "first_three_updates": [
+    {
+      "index": 0,
+      "raw_gyro_last_csv_line": 9,
+      "timestamp_ns": 1792119894952000000,
+      "time_s": 0.0,
+      "dt_s": 0.0,
+      "gyro_x_rad_s": 0.0083,
+      "gyro_y_rad_s": 0.0418,
+      "gyro_z_rad_s": -0.0036,
+      "acc_x_m_s2": -5.3981,
+      "acc_y_m_s2": 0.0143,
+      "acc_z_m_s2": -8.22,
+      "axial_rate_rad_s": 0.0416,
+      "previous_fused_deg": 33.253755,
+      "gyro_increment_deg": 0.0,
+      "prediction_deg": 33.253755,
+      "acc_dot_e1": 9.834012850030588,
+      "acc_dot_e2": -0.008653059188334061,
+      "acc_phase_rad": -0.0008799110889015516,
+      "acc_angle_deg": 33.304170191740816,
+      "acc_norm_m_s2": 9.834027054060813,
+      "projected_fraction": 0.9999921884269305,
+      "jerk_m_s3": 0.0,
+      "corrected_gyro_norm_rad_s": 0.04197195492230496,
+      "norm_gate": 1,
+      "projection_gate": 1,
+      "jerk_gate": 1,
+      "gyro_gate": 1,
+      "innovation_gate": 1,
+      "acc_used": 1,
+      "innovation_deg": 0.05041519174081799,
+      "gain_if_used": 0.0,
+      "applied_correction_deg": 0.0,
+      "final_fused_deg": 33.253755,
+      "pure_gyro_deg": 33.253755,
+      "saved_fused_deg": 33.253755
+    },
+    {
+      "index": 1,
+      "raw_gyro_last_csv_line": 13,
+      "timestamp_ns": 1792119894965000000,
+      "time_s": 0.013,
+      "dt_s": 0.013,
+      "gyro_x_rad_s": 0.0084,
+      "gyro_y_rad_s": 0.0349,
+      "gyro_z_rad_s": -0.0032,
+      "acc_x_m_s2": -5.3598,
+      "acc_y_m_s2": 0.0095,
+      "acc_z_m_s2": -8.2942,
+      "axial_rate_rad_s": 0.0347,
+      "previous_fused_deg": 33.253755,
+      "gyro_increment_deg": -0.02841584184951318,
+      "prediction_deg": 33.22533915815048,
+      "acc_dot_e1": 9.87507502081376,
+      "acc_dot_e2": 0.06405476797335116,
+      "acc_phase_rad": 0.006486418533231794,
+      "acc_angle_deg": 32.88211059389038,
+      "acc_norm_m_s2": 9.87528733404755,
+      "projected_fraction": 1.004188417358925,
+      "jerk_m_s3": 6.4338095499823,
+      "corrected_gyro_norm_rad_s": 0.0351299729575757,
+      "norm_gate": 1,
+      "projection_gate": 1,
+      "jerk_gate": 1,
+      "gyro_gate": 1,
+      "innovation_gate": 1,
+      "acc_used": 1,
+      "innovation_deg": -0.3432285642601016,
+      "gain_if_used": 0.012915864979712421,
+      "applied_correction_deg": -0.004433093793164021,
+      "final_fused_deg": 33.22090606435732,
+      "pure_gyro_deg": 33.22533915815048,
+      "saved_fused_deg": 33.22090606435732
+    },
+    {
+      "index": 2,
+      "raw_gyro_last_csv_line": 18,
+      "timestamp_ns": 1792119894980000000,
+      "time_s": 0.028,
+      "dt_s": 0.015000000000000001,
+      "gyro_x_rad_s": 0.0043,
+      "gyro_y_rad_s": 0.0027,
+      "gyro_z_rad_s": -0.0014,
+      "acc_x_m_s2": -5.3478,
+      "acc_y_m_s2": -0.0049,
+      "acc_z_m_s2": -8.2799,
+      "axial_rate_rad_s": 0.0025,
+      "previous_fused_deg": 33.22090606435732,
+      "gyro_increment_deg": -0.015985522484149972,
+      "prediction_deg": 33.20492054187317,
+      "acc_dot_e1": 9.856536892988968,
+      "acc_dot_e2": 0.06625199730860012,
+      "acc_phase_rad": 0.0067215291022500925,
+      "acc_angle_deg": 32.86863975056671,
+      "acc_norm_m_s2": 9.85676076913709,
+      "projected_fraction": 1.002304846350395,
+      "jerk_m_s3": 1.571764754804119,
+      "corrected_gyro_norm_rad_s": 0.0026972207918522354,
+      "norm_gate": 1,
+      "projection_gate": 1,
+      "jerk_gate": 1,
+      "gyro_gate": 1,
+      "innovation_gate": 1,
+      "acc_used": 1,
+      "innovation_deg": -0.33628079130646427,
+      "gain_if_used": 0.014888060396937353,
+      "applied_correction_deg": -0.005006568731300526,
+      "final_fused_deg": 33.19991397314187,
+      "pure_gyro_deg": 33.20935363566633,
+      "saved_fused_deg": 33.19991397314187
+    }
+  ],
+  "first_acc_interpolation": {
+    "index": 10,
+    "query_time_s": 0.109,
+    "acc_bracket_time_s": [
+      0.104,
+      0.125
+    ],
+    "acc_bracket_xyz": [
+      [
+        -5.3383,
+        -0.0169,
+        -8.3875
+      ],
+      [
+        -5.3359,
+        -0.0216,
+        -8.3684
+      ]
+    ],
+    "weight": 0.23809523809523825,
+    "interpolated_acc_xyz": [
+      -5.337728571428571,
+      -0.01801904761904762,
+      -8.38295238095238
+    ]
+  },
+  "verification": {
+    "traced_rows": 4085,
+    "max_abs_fused_difference_deg": 2.8421709430404007e-13,
+    "all_gyro_acc_fused_values_and_update_flags_checked": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "reference_size": [
+    480,
+    256
+  ],
+  "base_template_box": [
+    90,
+    149,
+    238,
+    159
+  ],
+  "lower_edge": [
+    [
+      239,
+      152
+    ],
+    [
+      90,
+      150
+    ]
+  ],
+  "hinge": [
+    240,
+    148
+  ],
+  "body_length": 150,
+  "template_search_radius": [
+    12,
+    10
+  ],
+  "min_template_score": 0.65,
+  "max_angle_step_deg": 24,
+  "min_edge_score": 0.66,
+  "max_reacquire_gap": 8,
+  "note": "Manual first-frame ROI initialization for this video; coordinates must be changed for other scenes. Angles are uncalibrated image projection angles."
+}

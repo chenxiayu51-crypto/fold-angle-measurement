@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-15",
+  "unit_and_integration_tests": 12,
+  "tests_passed": true,
+  "csv_rows": 545,
+  "decoded_annotated_video_frames": 545,
+  "annotated_fps": 30.0,
+  "annotated_resolution": [
+    960,
+    616
+  ],
+  "all_timestamps_consistent": true,
+  "all_valid_angles_recomputed_from_csv_edges": true,
+  "duplicate_upper_lower_segments": [],
+  "invalid_frames": [
+    321,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    426,
+    447
+  ],
+  "invalid_rows_have_blank_angles": true,
+  "plots_decodable": true,
+  "manual_projection_sanity_checks": 6,
+  "manual_check_caveat": "Six coarse human-selected image directions; same clip used during development. This is NOT independent mechanical ground truth, held-out evaluation, or a physical accuracy estimate.",
+  "independent_code_review": "Previous duplicate-edge blocker fixed with regression. Final read-only review found no remaining blockers for scene-specific prototype."
+}

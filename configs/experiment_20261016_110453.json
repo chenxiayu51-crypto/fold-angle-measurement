@@ -1,0 +1,43 @@
+{
+  "reference_size": [
+    1280,
+    720
+  ],
+  "base_template_box": [
+    550,
+    309,
+    826,
+    333
+  ],
+  "lower_edge": [
+    [
+      540,
+      313
+    ],
+    [
+      826,
+      314
+    ]
+  ],
+  "hinge": [
+    540,
+    305
+  ],
+  "body_length": 290,
+  "template_search_radius": [
+    30,
+    18
+  ],
+  "min_template_score": 0.55,
+  "max_angle_step_deg": 24,
+  "min_edge_score": 0.55,
+  "max_reacquire_gap": 8,
+  "fixed_geometry": true,
+  "angle_filter": {
+    "min_cutoff_hz": 0.8,
+    "beta": 0.1,
+    "derivative_cutoff_hz": 1.0
+  },
+  "note": "Manual first-frame initialization for experiment_20261016_110453; angles are uncalibrated 2D projections.",
+  "mirror_input": true
+}

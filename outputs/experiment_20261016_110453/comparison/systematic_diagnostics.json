@@ -1,0 +1,109 @@
+{
+  "bias_window_sensitivity_not_applied": [
+    {
+      "window_imu_s": [
+        0,
+        0.5
+      ],
+      "median_xyz_rad_s": [
+        0.0014,
+        0.0032500000000000003,
+        -0.00105
+      ],
+      "gyro_endpoint_change_if_used_deg": 7.805653279708087
+    },
+    {
+      "window_imu_s": [
+        0,
+        1
+      ],
+      "median_xyz_rad_s": [
+        0.00345,
+        0.0002,
+        -0.0008500000000000001
+      ],
+      "gyro_endpoint_change_if_used_deg": 0.0
+    },
+    {
+      "window_imu_s": [
+        41.676,
+        44.676
+      ],
+      "median_xyz_rad_s": [
+        0.0007,
+        0.0005,
+        0.0003
+      ],
+      "gyro_endpoint_change_if_used_deg": 0.7677691750532545
+    }
+  ],
+  "time_offset_sensitivity_not_used_for_fit": {
+    "-0.03333333333333333": {
+      "Fixed complementary": {
+        "samples": 1051,
+        "mae_deg": 1.2726154659123257,
+        "rmse_deg": 1.850731204879334,
+        "p95_abs_deg": 4.1148761857565574,
+        "max_abs_deg": 9.63598038345421,
+        "mean_bias_deg": -0.04395416549337235,
+        "median_bias_deg": 0.22049115023770582
+      },
+      "Dual AB": {
+        "samples": 1051,
+        "mae_deg": 1.5043642920925602,
+        "rmse_deg": 2.071036747759684,
+        "p95_abs_deg": 4.472726183355476,
+        "max_abs_deg": 10.189626695014653,
+        "mean_bias_deg": -0.9129342666627449,
+        "median_bias_deg": -0.9045951923578741
+      }
+    },
+    "0": {
+      "Fixed complementary": {
+        "samples": 1051,
+        "mae_deg": 0.6694560867616173,
+        "rmse_deg": 1.0404941276331632,
+        "p95_abs_deg": 1.855360096449071,
+        "max_abs_deg": 7.684712914555026,
+        "mean_bias_deg": -0.040670713775774435,
+        "median_bias_deg": 0.1574104879060556
+      },
+      "Dual AB": {
+        "samples": 1051,
+        "mae_deg": 1.0487964307292426,
+        "rmse_deg": 1.4230731983554867,
+        "p95_abs_deg": 2.5028903233010453,
+        "max_abs_deg": 8.396369065896994,
+        "mean_bias_deg": -0.9102370881958636,
+        "median_bias_deg": -0.9023382211500186
+      }
+    },
+    "0.03333333333333333": {
+      "Fixed complementary": {
+        "samples": 1051,
+        "mae_deg": 1.1896907451331236,
+        "rmse_deg": 1.8180134550270055,
+        "p95_abs_deg": 3.7293628126049976,
+        "max_abs_deg": 13.074911180037333,
+        "mean_bias_deg": -0.042071573304000555,
+        "median_bias_deg": 0.20164628882675117
+      },
+      "Dual AB": {
+        "samples": 1051,
+        "mae_deg": 1.4702543372601133,
+        "rmse_deg": 2.0798044442079484,
+        "p95_abs_deg": 4.258404815995341,
+        "max_abs_deg": 13.828051715342752,
+        "mean_bias_deg": -0.9117867550156616,
+        "median_bias_deg": -0.9062740570877281
+      }
+    }
+  },
+  "AB_minus_retained_B_deg": {
+    "samples": 1051,
+    "median_deg": -0.15802713333390273,
+    "std_deg": 0.25770580351839684
+  },
+  "acc_plane_vs_gyro_axis_abs_dot": 0.9999799015993314,
+  "interpretation": "Sensitivity diagnostics, not fitted corrections or independent causality proof."
+}

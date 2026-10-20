@@ -1,0 +1,203 @@
+{
+  "reference": "raw visual 2D projected angle on observed valid frames; no mechanical truth; shared initial visual anchor",
+  "core_common_support_samples": 1051,
+  "all_configurations_common_support_samples": 481,
+  "initial_calibration_excluded_imu_s": [
+    0,
+    1.0
+  ],
+  "core_common_metrics": {
+    "Gyro": {
+      "samples": 1051,
+      "mae_deg": 1.0228015244574664,
+      "rmse_deg": 1.2930691105662486,
+      "p95_abs_deg": 1.9145593040921938,
+      "max_abs_deg": 7.028350776598325,
+      "mean_bias_deg": 0.7215759431457257,
+      "median_bias_deg": 0.8386335960411557
+    },
+    "Fixed complementary": {
+      "samples": 1051,
+      "mae_deg": 0.6688049677131455,
+      "rmse_deg": 1.0438784138030235,
+      "p95_abs_deg": 1.8718343996854276,
+      "max_abs_deg": 7.685522161878447,
+      "mean_bias_deg": -0.036816513940595444,
+      "median_bias_deg": 0.13024844691278048
+    },
+    "Dual AB": {
+      "samples": 1051,
+      "mae_deg": 1.058644557269952,
+      "rmse_deg": 1.4302644394019433,
+      "p95_abs_deg": 2.5020096586895244,
+      "max_abs_deg": 8.397119772903562,
+      "mean_bias_deg": -0.9067339136027301,
+      "median_bias_deg": -0.8931629548229942
+    },
+    "Retain B": {
+      "samples": 1051,
+      "mae_deg": 0.9225934960738751,
+      "rmse_deg": 1.2870457449132497,
+      "p95_abs_deg": 2.3238082800375555,
+      "max_abs_deg": 8.106644902964396,
+      "mean_bias_deg": -0.7326800881145606,
+      "median_bias_deg": -0.6549105059263525
+    }
+  },
+  "all_configurations_common_metrics": {
+    "Gyro": {
+      "samples": 481,
+      "mae_deg": 1.0910469057364007,
+      "rmse_deg": 1.2935221553130778,
+      "p95_abs_deg": 1.8775871912167474,
+      "max_abs_deg": 6.767378824955356,
+      "mean_bias_deg": 0.8593111340358321,
+      "median_bias_deg": 1.000808453727501
+    },
+    "Fixed complementary": {
+      "samples": 481,
+      "mae_deg": 0.63519239516367,
+      "rmse_deg": 0.9264988011675465,
+      "p95_abs_deg": 1.420293622880962,
+      "max_abs_deg": 7.685522161878447,
+      "mean_bias_deg": 0.057648510298646316,
+      "median_bias_deg": 0.35916168367364065
+    },
+    "Dual AB": {
+      "samples": 481,
+      "mae_deg": 0.984934014541164,
+      "rmse_deg": 1.300311109628094,
+      "p95_abs_deg": 2.142521549154168,
+      "max_abs_deg": 8.397119772903562,
+      "mean_bias_deg": -0.8937298497431521,
+      "median_bias_deg": -0.9142258734612358
+    },
+    "Retain B": {
+      "samples": 481,
+      "mae_deg": 0.8332244024927328,
+      "rmse_deg": 1.1395936508691122,
+      "p95_abs_deg": 1.9319961501971399,
+      "max_abs_deg": 8.106644902964396,
+      "mean_bias_deg": -0.7020971025067221,
+      "median_bias_deg": -0.6615063513803534
+    },
+    "Retain A gravity": {
+      "samples": 481,
+      "mae_deg": 0.9135680525671822,
+      "rmse_deg": 1.2340780207483513,
+      "p95_abs_deg": 2.1276519273259,
+      "max_abs_deg": 8.040965555537017,
+      "mean_bias_deg": -0.798210799065157,
+      "median_bias_deg": -0.8209368579267959
+    }
+  },
+  "own_support_metrics_not_directly_comparable": {
+    "Gyro": {
+      "samples": 1051,
+      "mae_deg": 1.0228015244574664,
+      "rmse_deg": 1.2930691105662486,
+      "p95_abs_deg": 1.9145593040921938,
+      "max_abs_deg": 7.028350776598325,
+      "mean_bias_deg": 0.7215759431457257,
+      "median_bias_deg": 0.8386335960411557,
+      "availability_fraction": 1.0
+    },
+    "Fixed complementary": {
+      "samples": 1051,
+      "mae_deg": 0.6688049677131455,
+      "rmse_deg": 1.0438784138030235,
+      "p95_abs_deg": 1.8718343996854276,
+      "max_abs_deg": 7.685522161878447,
+      "mean_bias_deg": -0.036816513940595444,
+      "median_bias_deg": 0.13024844691278048,
+      "availability_fraction": 1.0
+    },
+    "Dual AB": {
+      "samples": 1051,
+      "mae_deg": 1.058644557269952,
+      "rmse_deg": 1.4302644394019433,
+      "p95_abs_deg": 2.5020096586895244,
+      "max_abs_deg": 8.397119772903562,
+      "mean_bias_deg": -0.9067339136027301,
+      "median_bias_deg": -0.8931629548229942,
+      "availability_fraction": 1.0
+    },
+    "Retain B": {
+      "samples": 1051,
+      "mae_deg": 0.9225934960738751,
+      "rmse_deg": 1.2870457449132497,
+      "p95_abs_deg": 2.3238082800375555,
+      "max_abs_deg": 8.106644902964396,
+      "mean_bias_deg": -0.7326800881145606,
+      "median_bias_deg": -0.6549105059263525,
+      "availability_fraction": 1.0
+    },
+    "Retain A gravity": {
+      "samples": 481,
+      "mae_deg": 0.9135680525671822,
+      "rmse_deg": 1.2340780207483513,
+      "p95_abs_deg": 2.1276519273259,
+      "max_abs_deg": 8.040965555537017,
+      "mean_bias_deg": -0.798210799065157,
+      "median_bias_deg": -0.8209368579267959,
+      "availability_fraction": 0.4576593720266413
+    }
+  },
+  "first_second_calibration_offsets_deg": {
+    "Gyro": 0.00744307033301439,
+    "Fixed complementary": 0.05837341762205028,
+    "Dual AB": 0.03639656966979743,
+    "Retain B": 0.051676381160593365,
+    "Retain A gravity": 0.13275769202792986
+  },
+  "first_second_calibrated_metrics": {
+    "Gyro": {
+      "samples": 1051,
+      "mae_deg": 1.0178169363277974,
+      "rmse_deg": 1.288930425975617,
+      "p95_abs_deg": 1.907116233759183,
+      "max_abs_deg": 7.0209077062653105,
+      "mean_bias_deg": 0.7141328728127132,
+      "median_bias_deg": 0.8311905257081449
+    },
+    "Fixed complementary": {
+      "samples": 1051,
+      "mae_deg": 0.6633058677292694,
+      "rmse_deg": 1.0475627953378641,
+      "p95_abs_deg": 1.892310571993761,
+      "max_abs_deg": 7.743895579500498,
+      "mean_bias_deg": -0.09518993156264573,
+      "median_bias_deg": 0.0718750292907302
+    },
+    "Dual AB": {
+      "samples": 1051,
+      "mae_deg": 1.0854870175467752,
+      "rmse_deg": 1.4536110501156418,
+      "p95_abs_deg": 2.538406228359322,
+      "max_abs_deg": 8.433516342573359,
+      "mean_bias_deg": -0.9431304832725251,
+      "median_bias_deg": -0.9295595244927917
+    },
+    "Retain B": {
+      "samples": 1051,
+      "mae_deg": 0.9587626680489282,
+      "rmse_deg": 1.3171490837690054,
+      "p95_abs_deg": 2.375484661198147,
+      "max_abs_deg": 8.15832128412499,
+      "mean_bias_deg": -0.7843564692751567,
+      "median_bias_deg": -0.7065868870869565
+    },
+    "Retain A gravity": {
+      "samples": 481,
+      "mae_deg": 1.0139391976824232,
+      "rmse_deg": 1.3238241624015117,
+      "p95_abs_deg": 2.2604096193538226,
+      "max_abs_deg": 8.173723247564947,
+      "mean_bias_deg": -0.9309684910930834,
+      "median_bias_deg": -0.9536945499547187
+    }
+  },
+  "posthoc_angle_scale_fit": false,
+  "endpoint_snapping": false,
+  "angle_range_clipping": false
+}

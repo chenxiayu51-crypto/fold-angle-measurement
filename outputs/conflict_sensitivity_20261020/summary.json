@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-20",
+  "purpose": "Quantify whether keep-last versus keep-first changes the reported conclusions.",
+  "method": "Recompute stream-level sensitivity from raw integer timestamps; rerun the full synchronized pipeline with read_log monkeypatched to keep-first, using the cached video result and a temporary output directory. Final outputs were not overwritten.",
+  "stream_level": {
+    "sensor_log_2026-10-16_09-12-25.csv": {
+      "sha256": "c4dcf53900c0295d79c81d95c167020505b77558852de105284bc7b18919a5fc",
+      "streams": {
+        "acc1": {
+          "records": 31517,
+          "unique_timestamps": 5046,
+          "duplicate_rows": 26471,
+          "conflicting_timestamps": 67,
+          "conflict_max_abs_component_difference": 0.7799999999999994,
+          "conflict_median_abs_component_difference": 0.0,
+          "samples_after_dropping_conflicts": 4979,
+          "fraction_retained_after_dropping_conflicts": 0.9867221561632976,
+          "acc_phase_difference_max_abs_deg": 1.9334927698584368,
+          "acc_phase_difference_median_abs_deg": 0.0
+        },
+        "gyro1": {
+          "records": 10536,
+          "unique_timestamps": 4356,
+          "duplicate_rows": 6180,
+          "conflicting_timestamps": 23,
+          "conflict_max_abs_component_difference": 0.036700000000000066,
+          "conflict_median_abs_component_difference": 0.0,
+          "samples_after_dropping_conflicts": 4333,
+          "fraction_retained_after_dropping_conflicts": 0.9947199265381084,
+          "gyro_integration_difference_final_deg": -0.013719478701542276,
+          "gyro_integration_difference_max_abs_deg": 0.026132597300971838
+        },
+        "加速度传感器": {
+          "records": 5627,
+          "unique_timestamps": 5627,
+          "duplicate_rows": 0,
+          "conflicting_timestamps": 0,
+          "acc_phase_difference_max_abs_deg": 0.0,
+          "acc_phase_difference_median_abs_deg": 0.0
+        },
+        "陀螺仪传感器": {
+          "records": 5267,
+          "unique_timestamps": 5267,
+          "duplicate_rows": 0,
+          "conflicting_timestamps": 0,
+          "gyro_integration_difference_final_deg": 0.0,
+          "gyro_integration_difference_max_abs_deg": 0.0
+        }
+      }
+    },
+    "sensor_log_2026-10-16_11-04-53.csv": {
+      "sha256": "e88c2d5afa3b60ce1be5fc709cdcd7a35de70a3418793e5759af9ec3b06a287a",
+      "streams": {
+        "加速度传感器": {
+          "records": 4956,
+          "unique_timestamps": 4956,
+          "duplicate_rows": 0,
+          "conflicting_timestamps": 0,
+          "acc_phase_difference_max_abs_deg": 0.0,
+          "acc_phase_difference_median_abs_deg": 0.0
+        },
+        "陀螺仪传感器": {
+          "records": 4461,
+          "unique_timestamps": 4461,
+          "duplicate_rows": 0,
+          "conflicting_timestamps": 0,
+          "gyro_integration_difference_final_deg": 0.0,
+          "gyro_integration_difference_max_abs_deg": 0.0
+        },
+        "gyro1": {
+          "records": 4461,
+          "unique_timestamps": 4086,
+          "duplicate_rows": 375,
+          "conflicting_timestamps": 9,
+          "conflict_max_abs_component_difference": 0.2023999999999999,
+          "conflict_median_abs_component_difference": 4.999999999999997e-05,
+          "samples_after_dropping_conflicts": 4077,
+          "fraction_retained_after_dropping_conflicts": 0.9977973568281938,
+          "gyro_integration_difference_final_deg": 0.0023010033753436687,
+          "gyro_integration_difference_max_abs_deg": 0.2481590785836545
+        },
+        "acc1": {
+          "records": 4428,
+          "unique_timestamps": 4102,
+          "duplicate_rows": 326,
+          "conflicting_timestamps": 6,
+          "conflict_max_abs_component_difference": 0.4929000000000001,
+          "conflict_median_abs_component_difference": 0.0023999999999997357,
+          "samples_after_dropping_conflicts": 4096,
+          "fraction_retained_after_dropping_conflicts": 0.9985372988785958,
+          "acc_phase_difference_max_abs_deg": 2.949588905289377,
+          "acc_phase_difference_median_abs_deg": 0.0
+        }
+      }
+    }
+  },
+  "full_pipeline_keep_first_vs_keep_last": {
+    "sync_offset_b_s": {
+      "keep_last": -1.2171608991906333,
+      "keep_first": -1.217181493151517,
+      "delta_s": -2.059396088371912e-05
+    },
+    "correlation_after": {
+      "keep_last": 0.97981762099906,
+      "keep_first": 0.9798250280742055
+    },
+    "initial_angle_deg": {
+      "keep_last": 33.253755,
+      "keep_first": 33.253755
+    },
+    "core_common_metrics": {
+      "Gyro": {
+        "keep_last_mae_deg": 0.9269382009710264,
+        "keep_first_mae_deg": 1.0228015244574664,
+        "delta_mae_deg": 0.09586332348644,
+        "keep_last_rmse_deg": 1.2218239801969608,
+        "keep_first_rmse_deg": 1.2930691105662486,
+        "delta_rmse_deg": 0.07124513036928781,
+        "keep_last_samples": 1051,
+        "keep_first_samples": 1051
+      },
+      "Fixed complementary": {
+        "keep_last_mae_deg": 0.6694560867616173,
+        "keep_first_mae_deg": 0.6688049677131455,
+        "delta_mae_deg": -0.0006511190484718155,
+        "keep_last_rmse_deg": 1.0404941276331632,
+        "keep_first_rmse_deg": 1.0438784138030235,
+        "delta_rmse_deg": 0.0033842861698603066,
+        "keep_last_samples": 1051,
+        "keep_first_samples": 1051
+      },
+      "Dual AB": {
+        "keep_last_mae_deg": 1.0487964307292426,
+        "keep_first_mae_deg": 1.058644557269952,
+        "delta_mae_deg": 0.009848126540709545,
+        "keep_last_rmse_deg": 1.4230731983554867,
+        "keep_first_rmse_deg": 1.4302644394019433,
+        "delta_rmse_deg": 0.00719124104645652,
+        "keep_last_samples": 1051,
+        "keep_first_samples": 1051
+      },
+      "Retain B": {
+        "keep_last_mae_deg": 0.9095667051629714,
+        "keep_first_mae_deg": 0.9225934960738751,
+        "delta_mae_deg": 0.01302679091090364,
+        "keep_last_rmse_deg": 1.2781141269407563,
+        "keep_first_rmse_deg": 1.2870457449132497,
+        "delta_rmse_deg": 0.008931617972493422,
+        "keep_last_samples": 1051,
+        "keep_first_samples": 1051
+      }
+    }
+  },
+  "conclusion": "Conflicting timestamps are rare (gyro 0.22%, acc 0.15% in the synchronized log). Keep-first versus keep-last changes the primary fixed-complementary MAE by -0.00065 deg, far below 0.669 deg; pure gyro MAE changes by +0.0959 deg. The choice does not change the conclusions. Interpolation or filtering is not an appropriate first-line fix for same-timestamp conflicts; the acquisition should log hardware event timestamps and sequence numbers.",
+  "evidence_files": {
+    "keep_first_comparison_metrics.json": "Full keep-first comparison metrics from the temporary rerun.",
+    "keep_first_time_alignment.json": "Keep-first synchronization result.",
+    "keep_first_imu_summary.json": "Keep-first IMU summary."
+  }
+}

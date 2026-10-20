@@ -1,0 +1,127 @@
+{
+  "source": "data/raw/sensor_log_2026-10-16_11-04-53.csv",
+  "data_rows": 18306,
+  "pairs": 9417,
+  "selected": 9241,
+  "excluded": 176,
+  "clamped_boundary": 4,
+  "fit": {
+    "scale": 1.0000133693743427,
+    "offset_s": -0.014183239063981336,
+    "method": "robust fit to neighboring host-clock CSV rows; uncalibrated software approximation",
+    "residual_p05_p50_p95_ms": [
+      -7.236828355863167,
+      -0.07835558084678951,
+      7.896716222930065
+    ],
+    "host_base_ns": 1792119894952000000,
+    "sensor_base_ns": 54192337235780
+  },
+  "examples": [
+    {
+      "csv_line": 2,
+      "sensor": "加速度传感器",
+      "timestamp_ns": 54192337235780,
+      "before_csv_line": 6,
+      "after_csv_line": 6,
+      "x_A_s": 0.0,
+      "before_B_s": 0.0,
+      "after_B_s": 0.0,
+      "midpoint_B_s": 0.0,
+      "width_s": 0.0,
+      "selected": 1,
+      "clamped_boundary": 1,
+      "predicted_B_s": -0.014183239063981336,
+      "residual_y_minus_prediction_ms": 14.183239063981336
+    },
+    {
+      "csv_line": 3,
+      "sensor": "陀螺仪传感器",
+      "timestamp_ns": 54192341235624,
+      "before_csv_line": 6,
+      "after_csv_line": 6,
+      "x_A_s": 0.003999844,
+      "before_B_s": 0.0,
+      "after_B_s": 0.0,
+      "midpoint_B_s": 0.0,
+      "width_s": 0.0,
+      "selected": 1,
+      "clamped_boundary": 1,
+      "predicted_B_s": -0.010183341588569587,
+      "residual_y_minus_prediction_ms": 10.183341588569588
+    },
+    {
+      "csv_line": 10,
+      "sensor": "加速度传感器",
+      "timestamp_ns": 54192357233592,
+      "before_csv_line": 9,
+      "after_csv_line": 12,
+      "x_A_s": 0.019997812,
+      "before_B_s": 0.0,
+      "after_B_s": 0.013,
+      "midpoint_B_s": 0.0065,
+      "width_s": 0.013,
+      "selected": 1,
+      "clamped_boundary": 0,
+      "predicted_B_s": 0.0058148402942533265,
+      "residual_y_minus_prediction_ms": 0.6851597057466732
+    },
+    {
+      "csv_line": 11,
+      "sensor": "陀螺仪传感器",
+      "timestamp_ns": 54192361233436,
+      "before_csv_line": 9,
+      "after_csv_line": 12,
+      "x_A_s": 0.023997656,
+      "before_B_s": 0.0,
+      "after_B_s": 0.013,
+      "midpoint_B_s": 0.0065,
+      "width_s": 0.013,
+      "selected": 1,
+      "clamped_boundary": 0,
+      "predicted_B_s": 0.009814737769665073,
+      "residual_y_minus_prediction_ms": -3.314737769665074
+    },
+    {
+      "csv_line": 14,
+      "sensor": "加速度传感器",
+      "timestamp_ns": 54192367232499,
+      "before_csv_line": 13,
+      "after_csv_line": 17,
+      "x_A_s": 0.029996719,
+      "before_B_s": 0.013,
+      "after_B_s": 0.028,
+      "midpoint_B_s": 0.0205,
+      "width_s": 0.015,
+      "selected": 1,
+      "clamped_boundary": 0,
+      "predicted_B_s": 0.01581388097338403,
+      "residual_y_minus_prediction_ms": 4.686119026615972
+    },
+    {
+      "csv_line": 15,
+      "sensor": "陀螺仪传感器",
+      "timestamp_ns": 54192371232342,
+      "before_csv_line": 13,
+      "after_csv_line": 17,
+      "x_A_s": 0.033996562,
+      "before_B_s": 0.013,
+      "after_B_s": 0.028,
+      "midpoint_B_s": 0.0205,
+      "width_s": 0.015,
+      "selected": 1,
+      "clamped_boundary": 0,
+      "predicted_B_s": 0.01981377744878241,
+      "residual_y_minus_prediction_ms": 0.6862225512175891
+    }
+  ],
+  "diagnostic_only_refit_without_boundary": {
+    "scale": 1.000013686021333,
+    "offset_s": -0.014192536746283381
+  },
+  "selected_residual_p05_p50_p95_ms": [
+    -7.140168085122411,
+    -0.093493194538663,
+    7.688662694402382
+  ]
+}

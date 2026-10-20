@@ -1,0 +1,36 @@
+{
+  "video": "data/raw/1016110453.mp4",
+  "imu": "data/raw/sensor_log_2026-10-16_11-04-53.csv",
+  "config": "configs/experiment_20261016_110453.json",
+  "config_sha256": "30ec1b31738e53fb958ba2826195e80df6aa0432bbe24b759d72a843a9ad5076",
+  "inputs_sha256": {
+    "data/raw/1016110453.mp4": "c19ef055c27c8c8bf1e392ebf8b9f92a4f5fb7625e3ae43d2e211d25663e9a3d",
+    "data/raw/sensor_log_2026-10-16_11-04-53.csv": "e88c2d5afa3b60ce1be5fc709cdcd7a35de70a3418793e5759af9ec3b06a287a"
+  },
+  "script": "analyze_synchronized_experiment.py",
+  "sync_module": "fold_angle/synchronization.py",
+  "comparison_module": "fold_angle/comparison.py",
+  "runtime": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "opencv": "4.11.0"
+  },
+  "new_code_sha256": {
+    "analyze_synchronized_experiment.py": "0338caa2a71c20eec7cde45331bdac436a6df707f7c92d3a5079687f6d364476",
+    "fold_angle/synchronization.py": "c9d7eca156ffe49867d9b32c7adffb5f67f66329f9b98155c2454a334be91896",
+    "fold_angle/comparison.py": "f969bc07d211b30cbf963b5ab17370ceed90909d52b315944e288aa3c904fb59",
+    "fold_angle/detector.py": "12dd4a34d1d3fdc7d36d44f097c0dfe1a6a3c5df920d1754388c4ca5a7dd872a",
+    "imu_angle.py": "f11544c4299808fc02ba0863a92829116734ff67f326e2ec7a8241c94ff7c9d0",
+    "tests/test_synchronization.py": "6873e985df79384068b5865220c6de9bcf55763a7ced8f72973eb1c1020a6c45"
+  },
+  "publication_sanitization": {
+    "date": "2026-10-20",
+    "reason": "Absolute local paths were replaced with repository-relative paths for public GitHub publication.",
+    "scope": "Only path strings in report templates, CLI defaults, documentation, and JSON metadata were changed. Numerical algorithms and saved numerical results were not modified.",
+    "code_hash_changes": [
+      "analyze_synchronized_experiment.py"
+    ],
+    "note": "The published code hashes in new_code_sha256 correspond to the sanitized code. Input hashes are unchanged; raw inputs are in data/raw/."
+  }
+}

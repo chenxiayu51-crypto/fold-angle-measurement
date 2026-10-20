@@ -1,0 +1,80 @@
+{
+  "video_rows": 1421,
+  "decoded_annotated_frames": 1421,
+  "video_rows_match_input": true,
+  "video_valid_rows": 1118,
+  "common_metrics_samples": 1051,
+  "all_ablation_common_samples": 482,
+  "imu_angle_rows": 4085,
+  "cleaned_unique_native_rows": 17605,
+  "imu_raw_int_ns_strictly_increasing": true,
+  "imu_time_strictly_increasing": true,
+  "video_time_strictly_increasing": true,
+  "fixed_pivot_range_px": [
+    0.0,
+    0.0
+  ],
+  "invalid_visual_angles_blank": true,
+  "input_sha256": {
+    "data/raw/1016110453.mp4": "c19ef055c27c8c8bf1e392ebf8b9f92a4f5fb7625e3ae43d2e211d25663e9a3d",
+    "data/raw/sensor_log_2026-10-16_11-04-53.csv": "e88c2d5afa3b60ce1be5fc709cdcd7a35de70a3418793e5759af9ec3b06a287a"
+  },
+  "inputs_unchanged": {
+    "data/raw/1016110453.mp4": true,
+    "data/raw/sensor_log_2026-10-16_11-04-53.csv": true
+  },
+  "metrics_recomputed_rmse_AB_deg": 1.4230731983554867,
+  "no_visual_interpolation_for_residuals": true,
+  "no_blind_large_gap_interpolation": true,
+  "causal_live_system": false,
+  "not_validated": [
+    "mechanical absolute accuracy",
+    "hardware synchronization",
+    "IMU installation axes",
+    "arbitrary handheld gyro removal"
+  ],
+  "tests": {
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\18165\\miniconda3\\envs\\vggt310\\python.exe",
+      "-m",
+      "pytest",
+      "tests",
+      "-q"
+    ],
+    "output": ".............................                               [100%]\n29 passed, 13 subtests passed in 5.03s",
+    "log": "test_results.txt"
+  },
+  "required_artifacts_checked": [
+    "video/annotated.mp4",
+    "video/angles.csv",
+    "video/diagnostics.png",
+    "video/summary.json",
+    "imu/cleaned_imu.csv",
+    "imu/angles.csv",
+    "imu/data_audit.json",
+    "imu/summary.json",
+    "synchronization/time_alignment.json",
+    "synchronization/angular_velocity_overlay.png",
+    "synchronization/synchronization_diagnostics.png",
+    "comparison/aligned_angles.csv",
+    "comparison/angle_overlay.png",
+    "comparison/angle_residuals.png",
+    "comparison/error_by_angle.png",
+    "comparison/error_by_speed.png",
+    "comparison/metrics.json",
+    "ablation/baseline_comparison.csv",
+    "ablation/baseline_comparison.png",
+    "ablation/metrics.json",
+    "report.md",
+    "verification.json"
+  ],
+  "required_artifacts_exist": true,
+  "native_cleaned_values_equal_last_raw_records": true,
+  "independent_gyro_trapezoid_max_difference_deg": 1.2079226507921703e-12,
+  "modeled_ray_vs_csv_angle_max_difference_deg": 0.00013155280440457773,
+  "independent_csv_metric_recomputation": true,
+  "all_png_files_decode": true,
+  "matched_events_unique_and_ordered": true,
+  "training_and_validation_events_disjoint": true
+}
